@@ -2,13 +2,16 @@
 title: "p8105_hw1_yx3033"
 Author: Yvonne Xie
 Data: 2025-09-20
-output: html_document
+output: github_document
 ---
 
 ## Problem 1
 ```{r}
 library(moderndive)
 data("early_january_weather")
+head(early_january_weather)
 ```
-
+The variables include `r names(early_january_weather)`.
+This dataset has `r nrow(early_january_weather)` rows and `r ncol(early_january_weather)` columns.
+The mean temperature is `r round(mean(early_january_weather$temp))` °F.
 
