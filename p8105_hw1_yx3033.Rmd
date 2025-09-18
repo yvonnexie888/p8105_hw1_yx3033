@@ -37,3 +37,17 @@ ggsave("scatterplot_temperature_vs_time.png")
 ```
  
 The scatterplot shows how temperatures fluctuates during early days of January. The temperatures range between mid-20s to mid-50s F. It shows a cycle of waming the cooling throughout the day. Temperature shows an general increasing trend from the beginning of January to mid-January.
+
+
+## Problem 2
+```{r}
+library(tidyverse)
+df <- tibble(
+  random_samp = rnorm(10),
+  is_positive = rnorm(10)>0,
+  vec_char = c("a", "b", "c", "a","b", "c","a","b", "c","a"),
+  fac_vec = factor(c("male","male","female","female","male","female","male","female","male","female"))
+)
+df
+```
+
