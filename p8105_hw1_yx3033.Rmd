@@ -50,4 +50,12 @@ df <- tibble(
 )
 df
 ```
+ 
+```{r}
+mean(df |> pull(random_samp))  
+mean(df |> pull(is_positive))  
+mean(df |> pull(vec_char))  
+mean(df |> pull(fac_vec)) 
+```
 
+The mean function worked for numeric and logical vector but not for character and factor vector. 
