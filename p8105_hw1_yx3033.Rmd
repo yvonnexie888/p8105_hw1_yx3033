@@ -15,10 +15,10 @@ The variables include `r names(early_january_weather)`.
 This dataset has `r nrow(early_january_weather)` rows and `r ncol(early_january_weather)` columns.
 The mean temperature is `r round(mean(early_january_weather$temp), digits =2)`F.
 
-Important variables are:
-`time_hour`:the time of recording (hourly), it's showing year-month-day and time in EST e.g. "2013-01-01 01:00:00 EST"
-`temp`: temperature in F, ranges from 24.08 to 57.92
-`humid`: relative humidity, worte in percentage, 59.4 means 59.4%
+Important variables are:  
+`time_hour`:the time of recording (hourly), it's showing year-month-day and time in EST e.g. "2013-01-01 01:00:00 EST"  
+`temp`: temperature in F, ranges from 24.08 to 57.92  
+`humid`: relative humidity, worte in percentage, 59.4 means 59.4%  
 
 ```{r}
 library(ggplot2)
@@ -35,4 +35,5 @@ labs(
 
 ggsave("scatterplot_temperature_vs_time.png")
 ```
-
+ 
+The scatterplot shows how temperatures fluctuates during early days of January. The temperatures range between mid-20s to mid-50s F. It shows a cycle of waming the cooling throughout the day. Temperature shows an general increasing trend from the beginning of January to mid-January.
