@@ -60,7 +60,7 @@ mean(df |> pull(fac_vec))
 
 The mean function worked for numeric and logical vector but not for character and factor vector. 
 
-```{r, results='hide'}
+```{r, results='hide', message=FALSE,warning=FALSE}
 as.numeric(df |> pull(is_positive))
 as.numeric(df |> pull(vec_char))
 as.numeric(df |> pull(fac_vec))
